@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h2>My Heroes</h2>
 <ul class="heroes">
   <li *ngFor="let hero of heroes">
@@ -6,3 +7,13 @@
     </a>
   </li>
 </ul>
+=======
+<h2>{{hero.name | uppercase}}</h2>
+<div><span>id: </span>{{hero.id}}</div>
+<div>
+  <label>name:
+    <input [(ngModel)]="hero.name" placeholder="Hero's name">
+  </label>
+</div>
+
+>>>>>>> 4fd2119aaba7c71ad71f9909a10979c5f0003a67

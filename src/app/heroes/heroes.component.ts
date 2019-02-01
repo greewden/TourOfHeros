@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {Hero} from '../hero';
+<<<<<<< HEAD
 import {HeroService} from '../hero.service';
+=======
+>>>>>>> 4fd2119aaba7c71ad71f9909a10979c5f0003a67
 
 @Component({
   selector: 'app-heroes',
@@ -9,6 +12,7 @@ import {HeroService} from '../hero.service';
 })
 export class HeroesComponent implements OnInit {
 
+<<<<<<< HEAD
   heroes: Hero[];
 
   constructor(private heroService: HeroService) {
@@ -24,4 +28,18 @@ export class HeroesComponent implements OnInit {
         heroes => { this.heroes = heroes; }
       );
   }
+=======
+  private hero: Hero;
+
+  constructor() {
+    this.hero = {
+      id: 1,
+      name: 'Windstorm'
+    };
+  }
+
+  ngOnInit() {
+  }
+
+>>>>>>> 4fd2119aaba7c71ad71f9909a10979c5f0003a67
 }
